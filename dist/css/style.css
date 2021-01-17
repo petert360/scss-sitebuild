@@ -122,15 +122,15 @@ html {
   align-items: center;
   display: flex;
   flex-direction: column;
-  width: 40rem;
+  padding: 0 5rem;
 }
 .mainHeader .container-left h1 {
   flex-grow: 1;
-  text-align: center;
   font-size: 2rem;
   font-weight: 200;
   line-height: 2.5rem;
   padding: 0 2rem 1rem 1rem;
+  text-align: center;
 }
 .mainHeader .container-left a {
   width: 10rem;
@@ -315,7 +315,7 @@ section.cta .overlay {
   display: block;
   width: 5rem;
   height: 5rem;
-  color: white;
+  color: #fff;
   border-radius: 100%;
   margin: 0.6rem;
 }
@@ -357,7 +357,6 @@ footer p {
   margin: 0 0 0.5rem 0;
 }
 footer a {
-  font-family: "Mulish", "Helvetica", "Arial", "sans-serif";
   font-size: 0.8rem;
   margin: 0 0.8rem;
   color: rgba(255, 255, 255, 0.3);

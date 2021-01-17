@@ -108,15 +108,15 @@
         align-items: center;
         display: flex;
         flex-direction: column;
-        width: 40rem;
+        padding: 0 5rem;
 
         h1 {
             flex-grow: 1;
-            text-align: center;
             font-size: 2rem;
             font-weight: 200;
             line-height: 2.5rem;
             padding: 0 2rem 1rem 1rem;
+            text-align: center;
         }
 
         a {
@@ -181,16 +181,17 @@
         @media screen and (min-width: 62rem) {
             flex-direction: row;
         }
-    }
-
-    .badge .badge-link {
-        margin-bottom: 1rem;
-
-        img {
-            height: 4rem;
-            padding: 0.3rem;
+        
+        .badge-link {
+            margin-bottom: 1rem;
+    
+            img {
+                height: 4rem;
+                padding: 0.3rem;
+            }
         }
     }
+
 }
 
 section.features {
@@ -326,7 +327,7 @@ section.cta {
         display: block;
         width: 5rem;
         height: 5rem;
-        color: white;
+        color: #fff;
         border-radius: 100%;
         margin: 0.6rem;
 
@@ -378,7 +379,6 @@ footer {
     }
 
     a {
-        font-family: "Mulish", "Helvetica", "Arial", "sans-serif";
         font-size: 0.8rem;
         margin: 0 0.8rem;
         color: rgba(255, 255, 255, 0.3);
