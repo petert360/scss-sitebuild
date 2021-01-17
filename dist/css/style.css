@@ -109,16 +109,11 @@ html {
   width: 1.5rem;
 }
 
-header.mainHeader {
+.mainHeader {
   background: url(../img/bg-pattern.png), linear-gradient(to left, #7b4397, #dc2430);
   padding-top: 8rem;
-}
-
-.mainHeader {
-  font-family: "Catamaran", "Helvetica", "Arial", "sans-serif";
   color: #fff;
 }
-
 .mainHeader h1 {
   font-size: 2rem;
 }
@@ -132,7 +127,6 @@ header.mainHeader {
   color: #fff;
   border: 1px solid;
 }
-
 .btn:hover {
   border: 1px solid #fdcc52;
   background-color: #fdcc52;
@@ -185,7 +179,7 @@ section.features .feature-item h3 {
 section.features .feature-item p.icon {
   font-size: 4rem;
   margin: 0;
-  color: #B2315C;
+  color: #b2315c;
 }
 
 section.cta {
@@ -305,7 +299,8 @@ footer a:hover {
   transition: all 0.3s;
 }
 
-.modal-title, .modal-body {
+.modal-title,
+.modal-body {
   color: rgba(0, 0, 0, 0.5);
 }
 
