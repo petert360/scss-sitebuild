@@ -192,12 +192,32 @@
 }
 
 section.features {
-    padding: 3.5rem 0;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 1rem;
+    text-align: center;
+
+    h2 {
+        font-size: 3rem;
+        font-weight: 200;
+        margin-bottom: 1rem;
+        line-height: 3.5rem;
+        width: 30rem;
+    }
+
+    p {
+        color: modules.$muted-color;
+    }
+
+    hr {
+        border: none;
+        height: 1px;
+        background-color: modules.$hr-color;
+        width: 10rem;
+    }
 
     .feature-item {
-        padding: 2rem 1rem;
-        text-align: center;
-
         h3 {
             font-size: 2rem;
         }
