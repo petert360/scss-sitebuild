@@ -233,7 +233,7 @@ section.features {
         &-right {
             display: flex;
             flex-direction: column;
-            
+
             .first-row {
                 display: flex;
                 flex-direction: row;
@@ -264,7 +264,7 @@ section.features {
 
 section.cta {
     position: relative;
-    padding: 15rem 0;
+    padding: 15rem 3rem;
     background-image: url("../img/bg-cta.jpg");
     background-position: center;
     background-size: cover;
@@ -274,12 +274,14 @@ section.cta {
         z-index: 1;
     }
 
-    section.cta h2 {
-        font-size: 3rem;
+    h2 {
+        font-size: 4.5rem;
+        font-weight: 200;
+        line-height: 6rem;
         max-width: 30rem;
         margin-top: 0;
         margin-bottom: 2rem;
-        color: white;
+        color: #fff;
     }
 
     .overlay {
@@ -292,13 +294,22 @@ section.cta {
     }
 }
 
-section.contact {
-    padding: 2rem 0;
+.contact {
+    padding: 5rem 0;
     justify-content: center;
     background-color: #fdcc52;
+    text-align: center;
+
+    .row {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
 
     h2 {
         font-size: 3rem;
+        font-weight: 200;
+        margin: 0 1rem 0 0;
     }
 
     span {
@@ -316,38 +327,34 @@ section.contact {
         color: white;
         border-radius: 100%;
         margin: 0.6rem;
-    }
 
-    .row {
-        justify-content: center;
-    }
-}
+        &.twitterButton {
+            background-color: rgba(29, 161, 242, 0.9);
 
-a.twitterButton {
-    background-color: rgba(29, 161, 242, 0.9);
+            &:hover {
+                background-color: rgba(29, 161, 242, 1);
+            }
+        }
 
-    &:hover {
-        background-color: rgba(29, 161, 242, 1);
-    }
-}
+        &.facebookButton {
+            background-color: rgba(59, 89, 152, 0.9);
+            transition: all 0.3s;
 
-a.facebookButton {
-    background-color: rgba(59, 89, 152, 0.9);
-    transition: all 0.3s;
+            &:hover {
+                background-color: rgba(59, 89, 152, 1);
+                transition: all 0.3s;
+            }
+        }
 
-    &:hover {
-        background-color: rgba(59, 89, 152, 1);
-        transition: all 0.3s;
-    }
-}
+        &.googleButton {
+            background-color: rgba(221, 75, 57, 0.9);
+            transition: all 0.3s;
 
-a.googleButton {
-    background-color: rgba(221, 75, 57, 0.9);
-    transition: all 0.3s;
-
-    &:hover {
-        background-color: rgba(221, 75, 57, 1);
-        transition: all 0.3s;
+            &:hover {
+                background-color: rgba(221, 75, 57, 1);
+                transition: all 0.3s;
+            }
+        }
     }
 }
 
