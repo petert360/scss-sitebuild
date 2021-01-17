@@ -2,21 +2,26 @@
 
 .nav {
     background: modules.$nav-background-color;
-    box-shadow: 0 0 10px modules.$nav-shadow-color; // menüsáv alatti shadow
     display: flex;
     justify-content: center; // középre igazítás
 
     &__brand {
         align-items: center;
+        justify-content: center;
         color: modules.$nav-brand-color;
         display: block;
         flex-grow: 1;
-        font-size: 1rem;
-        padding: 0.6rem 0 0 1rem;
+        font-size: 1.3rem;
+        padding: 0.45rem 0 0 1rem;
         text-decoration: none;
         white-space: nowrap;
-    }
 
+        &:hover{
+            color:#fff;
+            transition: all .3s;
+        }
+    }
+    
     &__container {
         align-items: flex-start; // mobile first
         display: flex;
@@ -24,7 +29,7 @@
         width: 100%; // teljes kitöltés
 
         @media screen and (min-width: 62rem) {
-            align-items: center; //992px-nél középre rendezés
+            //align-items: center; //992px-nél középre rendezés
         }
     }
 
@@ -41,7 +46,8 @@
         @media screen and (min-width: 62rem) {
             display: flex;
             flex-direction: row; // egymás mellett legyenek az elemek
-            width: auto;
+            align-items: flex-end;
+            flex-direction: row-reverse;
         }
     }
 
@@ -59,8 +65,8 @@
         text-decoration: none;
 
         &:hover {
-            background: modules.$link-hover-background-color;
-            color: modules.$link-background-color;
+            color: modules.$nav-brand-color;
+            transition: all .3s;
         }
     }
 
@@ -103,6 +109,7 @@
     display: flex;
     flex-direction: column;
     padding-top: 8rem;
+    text-align: center;
 
     .container-left {
         align-items: center;
@@ -113,7 +120,6 @@
         h1 {
             flex-grow: 1;
             font-size: 2rem;
-
             line-height: 2.5rem;
             padding: 0 2rem 1rem 1rem;
             text-align: center;
@@ -191,7 +197,7 @@
     }
 }
 
-section.features {
+.features {
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -227,18 +233,13 @@ section.features {
 
         @media screen and (min-width: 62rem) {
             flex-direction: row;
-        }
-/*
-        &-right {
-            display: flex;
-            flex-direction: row;
 
             .row {
                 display: flex;
                 flex-direction: row;
             }
         }
-*/
+
         .feature-item {
             width: 20rem;
             margin-bottom: 4rem;
