@@ -167,23 +167,34 @@ html {
   display: flex;
   flex-direction: column;
   padding: 4rem 0;
+  text-align: center;
 }
 .download h2 {
   font-size: 3rem;
   font-weight: 200;
   margin-bottom: 1rem;
+  line-height: 3.5rem;
   width: 40rem;
 }
 .download p {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  width: 40rem;
+}
+.download .badge {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 62rem) {
+  .download .badge {
+    flex-direction: row;
+  }
+}
+.download .badge .badge-link {
   margin-bottom: 1rem;
 }
-.download .badges .badge-link {
-  display: block;
-  margin-bottom: 1rem;
-}
-.download .badges .badge-link img {
-  height: 5rem;
+.download .badge .badge-link img {
+  height: 4rem;
   padding: 0.3rem;
 }
 
