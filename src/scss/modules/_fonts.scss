@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100;200;300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+
+.nav__brand, h1, h2, h3 {
+    font-family: 'Catamaran', Helvetica, Arial, sans-serif;
+    letter-spacing: 1px;
+}
+
+.button__main, .nav__link {
+    font-family: 'Lato', Helvetica, Arial, sans-serif;
+}
+
+p, .footer {
+    font-family: 'Mulish', Helvetica, Arial, sans-serif;
+}
