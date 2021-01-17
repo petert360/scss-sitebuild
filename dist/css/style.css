@@ -204,39 +204,55 @@ section.features {
   flex-direction: column;
   padding: 2rem 1rem;
   text-align: center;
-  /*    @media screen and (min-width: 62rem) {
-          flex-direction: row;
-      }*/
 }
-section.features h2 {
+section.features .containter-top h2 {
   font-size: 3rem;
   font-weight: 200;
   margin-bottom: 1rem;
   line-height: 3.5rem;
   width: 30rem;
 }
-section.features p {
+section.features .containter-top p {
   font-size: 1rem;
   color: #777;
   margin: 0;
 }
-section.features hr {
+section.features .containter-top hr {
   border: none;
   height: 1px;
   background-color: #bbb;
   width: 10rem;
 }
-section.features .feature-item {
+section.features .containter-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media screen and (min-width: 62rem) {
+  section.features .containter-bottom {
+    display: flex;
+    flex-direction: row;
+  }
+}
+section.features .containter-bottom-right {
+  display: flex;
+  flex-direction: column;
+}
+section.features .containter-bottom-right .first-row {
+  display: flex;
+  flex-direction: row;
+}
+section.features .containter-bottom .feature-item {
   width: 20rem;
   margin-bottom: 4rem;
   margin-top: 1rem;
 }
-section.features .feature-item h3 {
+section.features .containter-bottom .feature-item h3 {
   font-size: 2rem;
   font-weight: 200;
   margin: 0;
 }
-section.features .feature-item p.icon {
+section.features .containter-bottom .feature-item p.icon {
   font-weight: bold;
   font-size: 5rem;
   margin: 0;
