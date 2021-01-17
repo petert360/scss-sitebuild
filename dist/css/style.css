@@ -6,8 +6,9 @@
   letter-spacing: 1px;
 }
 
-.button__main, .nav__link {
+.nav__link, a {
   font-family: "Lato", Helvetica, Arial, sans-serif;
+  text-decoration: none;
 }
 
 p, .footer {
@@ -118,7 +119,7 @@ html {
   font-size: 2rem;
 }
 
-.btn {
+.button-outline {
   border-radius: 10rem;
   font-family: "Lato", Helvetica, Arial, sans-serif;
   font-size: 0.7rem;
@@ -127,7 +128,7 @@ html {
   color: #fff;
   border: 1px solid;
 }
-.btn:hover {
+.button-outline:hover {
   border: 1px solid #fdcc52;
   background-color: #fdcc52;
   transition: all 0.3s;

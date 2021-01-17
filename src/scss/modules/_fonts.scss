@@ -7,8 +7,9 @@
     letter-spacing: 1px;
 }
 
-.button__main, .nav__link {
+.nav__link, a {
     font-family: 'Lato', Helvetica, Arial, sans-serif;
+    text-decoration: none;
 }
 
 p, .footer {
