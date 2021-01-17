@@ -111,12 +111,35 @@ html {
 }
 
 .mainHeader {
+  align-items: center;
   background: url(../img/bg-pattern.png), linear-gradient(to left, #7b4397, #dc2430);
-  padding-top: 8rem;
   color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding-top: 8rem;
 }
-.mainHeader h1 {
+.mainHeader .container-left {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 40rem;
+}
+.mainHeader .container-left h1 {
+  flex-grow: 1;
+  text-align: center;
   font-size: 2rem;
+  font-weight: 200;
+  line-height: 2.5rem;
+  padding: 0 2rem 1rem 1rem;
+}
+.mainHeader .container-left a {
+  width: 10rem;
+}
+@media screen and (min-width: 62rem) {
+  .mainHeader {
+    flex-direction: row;
+    padding-top: 3rem;
+  }
 }
 
 .button-outline {
@@ -134,27 +157,32 @@ html {
 }
 
 .placeholder img {
-  padding: 2rem;
+  padding: 4rem;
   height: 40rem;
 }
 
-section.download {
-  position: relative;
+.download {
+  align-items: center;
+  background-color: #fdcc52;
+  display: flex;
+  flex-direction: column;
   padding: 4rem 0;
 }
-section.download h2 {
+.download h2 {
   font-size: 3rem;
+  font-weight: 200;
   margin-bottom: 1rem;
+  width: 40rem;
 }
-section.download p {
+.download p {
   font-size: 1.1rem;
   margin-bottom: 1rem;
 }
-section.download .badges .badge-link {
+.download .badges .badge-link {
   display: block;
   margin-bottom: 1rem;
 }
-section.download .badges .badge-link img {
+.download .badges .badge-link img {
   height: 5rem;
   padding: 0.3rem;
 }

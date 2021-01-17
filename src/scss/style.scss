@@ -97,13 +97,38 @@
 }
 
 .mainHeader {
+    align-items: center;
     background: url(../img/bg-pattern.png), linear-gradient(to left, #7b4397, #dc2430);
-    padding-top: 8rem;
     color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding-top: 8rem;
+    
+    .container-left {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        width: 40rem;
 
-    h1 {
-        font-size: 2rem;
+        h1 {
+            flex-grow: 1;
+            text-align: center;
+            font-size: 2rem;
+            font-weight: 200;
+            line-height: 2.5rem;
+            padding: 0 2rem 1rem 1rem;
+        }
+
+        a {
+            width: 10rem;
+        }
     }
+
+    @media screen and (min-width: 62rem) {
+        flex-direction: row;
+        padding-top: 3rem;
+    }
+
 }
 
 .button-outline {
@@ -122,17 +147,22 @@
 }
 
 .placeholder img {
-    padding: 2rem;
+    padding: 4rem;
     height: 40rem;
 }
 
-section.download {
-    position: relative;
+.download {
+    align-items: center;
+    background-color: modules.$nav-brand-color;
+    display: flex;
+    flex-direction: column;
     padding: 4rem 0;
 
     h2 {
         font-size: 3rem;
+        font-weight: 200;
         margin-bottom: 1rem;
+        width: 40rem;
     }
 
     p {
