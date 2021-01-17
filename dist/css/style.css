@@ -174,12 +174,12 @@ html {
   font-weight: 200;
   margin-bottom: 1rem;
   line-height: 3.5rem;
-  width: 40rem;
+  padding: 0 5rem;
 }
 .download p {
   font-size: 1.2rem;
   margin-bottom: 1rem;
-  width: 40rem;
+  padding: 0 5rem;
 }
 .download .badge {
   display: flex;
@@ -343,16 +343,18 @@ section.cta .overlay {
 }
 
 footer {
-  padding: 2rem 0;
-  color: rgba(255, 255, 255, 0.3);
   background-color: #222222;
+  color: rgba(255, 255, 255, 0.3);
+  padding: 2rem 0;
 }
 footer .row {
+  display: flex;
+  flex-direction: row;
   justify-content: center;
 }
 footer p {
   font-size: 0.8rem;
-  margin: 0;
+  margin: 0 0 0.5rem 0;
 }
 footer a {
   font-family: "Mulish", "Helvetica", "Arial", "sans-serif";
