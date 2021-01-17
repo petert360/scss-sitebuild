@@ -35,7 +35,7 @@
         list-style: none;
         margin: 0 auto;
         padding-top: 3rem;
-        //padding: 0; // nem itt, hanem a linkeknél fogjuk majd állítani
+        padding: 0; // nem itt, hanem a linkeknél fogjuk majd állítani
         width: 100%;
 
         @media screen and (min-width: 62rem) {
@@ -113,7 +113,7 @@
         h1 {
             flex-grow: 1;
             font-size: 2rem;
-            font-weight: 200;
+
             line-height: 2.5rem;
             padding: 0 2rem 1rem 1rem;
             text-align: center;
@@ -160,18 +160,16 @@
 
     h2 {
         font-size: 3rem;
-        font-weight: 200;
+
         margin-bottom: 1rem;
         line-height: 3.5rem;
         padding: 0 5rem;
-        
     }
-    
+
     p {
         font-size: 1.2rem;
         margin-bottom: 1rem;
         padding: 0 5rem;
-        
     }
 
     .badge {
@@ -181,17 +179,16 @@
         @media screen and (min-width: 62rem) {
             flex-direction: row;
         }
-        
+
         .badge-link {
             margin-bottom: 1rem;
-    
+
             img {
                 height: 4rem;
                 padding: 0.3rem;
             }
         }
     }
-
 }
 
 section.features {
@@ -204,7 +201,6 @@ section.features {
     .containter-top {
         h2 {
             font-size: 3rem;
-            font-weight: 200;
             margin-bottom: 1rem;
             line-height: 3.5rem;
             width: 30rem;
@@ -221,28 +217,28 @@ section.features {
             height: 1px;
             background-color: modules.$hr-color;
             width: 10rem;
+            margin-top: 2rem;
         }
     }
     .containter-bottom {
+        align-items: center;
         display: flex;
         flex-direction: column;
-        align-items: center;
 
         @media screen and (min-width: 62rem) {
-            display: flex;
             flex-direction: row;
         }
-
+/*
         &-right {
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
 
-            .first-row {
+            .row {
                 display: flex;
                 flex-direction: row;
             }
         }
-
+*/
         .feature-item {
             width: 20rem;
             margin-bottom: 4rem;
@@ -250,8 +246,6 @@ section.features {
 
             h3 {
                 font-size: 2rem;
-                font-weight: 200;
-
                 margin: 0;
             }
 
@@ -279,7 +273,6 @@ section.cta {
 
     h2 {
         font-size: 4.5rem;
-        font-weight: 200;
         line-height: 6rem;
         max-width: 30rem;
         margin-top: 0;
@@ -311,7 +304,6 @@ section.cta {
 
     h2 {
         font-size: 3rem;
-        font-weight: 200;
         margin: 0 1rem 0 0;
     }
 
@@ -374,8 +366,7 @@ footer {
 
     p {
         font-size: 0.8rem;
-        margin: 0 0 .5rem 0;
-
+        margin: 0 0 0.5rem 0;
     }
 
     a {
